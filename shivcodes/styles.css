@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #40E0D0;
+    overflow: hidden;
+}
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100vh;
+    z-index: -100;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.15;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+.timer-container {
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 3rem;
+}
+
+.timer span {
+    background: #1a1a1a;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 10rem;
+    font-weight: 700;
+    min-width: 200px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.timer span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 3px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background: transparent;
+    border: 2px solid #40E0D0;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    color: #40E0D0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    min-width: 120px;
+}
+
+.btn:hover {
+    background: #40E0D0;
+    color: #000;
+}
+
+.mode-switch {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.mode-btn {
+    background: transparent;
+    border: 2px solid #40E0D0;
+    padding: 1rem 3rem;
+    border-radius: 100px;
+    color: #40E0D0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    min-width: 200px;
+    letter-spacing: 1px;
+}
+
+.mode-btn:hover {
+    background: rgba(64, 224, 208, 0.1);
+}
+
+.mode-btn.active {
+    background: #40E0D0;
+    color: #000;
+    box-shadow: 0 0 20px rgba(64, 224, 208, 0.3);
+}
+
+.date-display {
+    margin-top: 2rem;
+    color: #40E0D0;
+    font-size: 1.2rem;
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.spotify-container {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.spotify-btn {
+    background: #1DB954;
+}
+
+.spotify-player {
+    display: none;
+    margin-top: 1rem;
+}
+
+.track-info {
+    margin: 1rem 0;
+}
+
+.control-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+}
+
+#track-name {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+#artist-name {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}

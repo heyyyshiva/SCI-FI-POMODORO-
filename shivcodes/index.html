@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aesthetic Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="giyu.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <div class="container">
+        <div class="timer-container">
+            <div class="timer" id="timer">
+                <span>30</span>
+                <span>00</span>
+            </div>
+            <div class="controls">
+                <button id="start" class="btn">Start</button>
+                <button id="reset" class="btn">Reset</button>
+            </div>
+            <div class="mode-switch">
+                <button class="btn mode-btn active" data-time="30">Pomodoro</button>
+                <button class="btn mode-btn" data-time="5">Short Break</button>
+                <button class="btn mode-btn" data-time="15">Long Break</button>
+            </div>
+        </div>
+        <div class="date-display" id="date"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
