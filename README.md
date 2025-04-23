@@ -20,4 +20,4 @@ A simple and sleek Pomodoro Timer built using **HTML**, **CSS**, and **JavaScrip
 
 ## 📸 Screenshots
 
-![App Screenshot](./Screenshot 2025-04-23 212923.png)
+![App Screenshot](./shiva.png)
